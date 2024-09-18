@@ -32,7 +32,7 @@ The **Django Job Portal** is an open-source job portal application developed usi
 3. **Clone the Repository and Install Dependencies**
 
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/markus-wilkes/job_portal_django_app.github.io.git
     cd django-job-portal
     pip install -r requirements.txt
     ```
