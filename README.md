@@ -6,102 +6,108 @@
 
 </div>
 
-## Django Job Portal
+## Project Overview
 
-#### An open source online job portal.
+The **Django Job Portal** is an open-source job portal application developed using Django. It enables users to search for job opportunities, apply for positions, and manage resumes. Employers can post job openings and view applications. The project aims to streamline the job application process and provide a user-friendly interface for both job seekers and employers.
 
-<p align="center">
-    <img alt="forks" src="https://img.shields.io/github/forks/manjurulhoque/django-job-portal?label=Forks&style=social"/>
-    <img alt="stars" src="https://img.shields.io/github/stars/manjurulhoque/django-job-portal?style=social"/>
-    <img alt="watchers" src="https://img.shields.io/github/watchers/manjurulhoque/django-job-portal?style=social"/>
-    <img alt="github Actions" src="https://github.com/manjurulhoque/django-job-portal/workflows/job-portal/badge.svg"/>
-</p>
+**Live Demo:** [View Live Demo](https://django-job.herokuapp.com/) | [Second Demo](http://jobs.manjurulhoque.com/)
 
-Live: [Demo](https://django-job.herokuapp.com/) or [Second Demo](http://jobs.manjurulhoque.com/)
+## Technologies
 
-Used Tech Stack
+- **Django:** Web framework for building the application.
+- **SQLite:** Lightweight database for storing data.
 
-1. Django
-2. Sqlite
+## Screenshots
 
-### Screenshots
+**Home Page**
+![Home Page](screenshots/one.png)
 
-## Home page
-<img src="screenshots/one.png" height="800">
+**Resume Template Page**
+![Resume Template Page](screenshots/six.png)
+![Resume Template Page](screenshots/seven.png)
 
-## Resume template page
-<img src="screenshots/six.png" height="800">
-<img src="screenshots/seven.png" height="800">
+**Login Page**
+![Login Page](screenshots/five.png)
 
-## Login page
-<img src="screenshots/five.png" height="800">
+**Add New Position as Employer**
+![Add New Position](screenshots/two.png)
 
-## Add new position as employer
-<img src="screenshots/two.png" height="800">
+**Job Details**
+![Job Details](screenshots/three.png)
 
-## Job details
-<img src="screenshots/three.png" height="800">
+**Swagger API**
+![Swagger API](screenshots/four.png)
 
-## Swagger API
-<img src="screenshots/four.png" height="800">
+## Local Environment Setup
 
-<a name="local-venv"></a>
-### Local environment
+### Installation
 
-#### Install
+1. **Create a Virtual Environment**
 
-1. Create a virtual environment
+    ```bash
+    python3.8 -m venv venv
+    ```
 
-    `virtualenv venv`
+2. **Activate the Virtual Environment**
 
-    Or
+    ```bash
+    source venv/bin/activate
+    ```
 
-    `python3.8 -m venv venv`
+3. **Clone the Repository and Install Dependencies**
 
-2. Activate it
+    ```bash
+    git clone <repository-url>
+    cd django-job-portal
+    pip install -r requirements.txt
+    ```
 
-    `source venv/bin/activate`
+4. **Set Up Environment Variables**
 
-3. Clone the repository and install the packages in the virtual env:
+    ```bash
+    cp .env.dev.sample .env
+    ```
+    Update `.env` with your Github client ID and client secret.
 
-    `pip install -r requirements.txt`
+### Running the Application
 
-4. Add `.env` file.
+1. **Collect Static Files**
 
-    `cp .env.dev.sample .env`
-
-5. Add Github client ID and client secret in the `.env` file
-
-#### Run
-
-1.With the venv activate it, execute:
-
+    ```bash
     python manage.py collectstatic
+    ```
+    *Note: This step is not needed if `DEBUG=True`.*
 
-*Note* : Collect static is not necessary when debug is True (in dev mode)
+2. **Create Initial Database**
 
-2. Create initial database:
+    ```bash
+    python manage.py migrate
+    ```
 
-    `python manage.py migrate`
+3. **Load Demo Data (Optional)**
 
+    ```bash
+    python manage.py loaddata fixtures/app_name_initial_data.json --app app.model_name
+    ```
 
-3. Load demo data (optional):
+4. **Run the Development Server**
 
-    `python manage.py loaddata fixtures/app_name_initial_data.json --app app.model_name`
+    ```bash
+    python manage.py runserver
+    ```
 
-4. Run server:
+5. **Default Django Admin Credentials**
 
-    `python manage.py runserver`
+    - **Email:** example123@gmail.com
+    - **Password:** admin
 
-5. Default django admin credentials:
+### Running Tests
 
-    `email: admin@admin.com`
-    `password: admin`
+```bash
+python manage.py test
+```
+### License
+This project is licensed under the MIT License.
 
-#### Run test:
-``python manage.py test``
-
-#### To dump data:
-``python manage.py dumpdata --format=json --indent 4 app_name > app_name/fixtures/app_name_initial_data.json``
-
-Show your support by 🌟 the project!!
+### Author
+Developed by Marcus Wilkes
