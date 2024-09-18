@@ -1,14 +1,12 @@
-<div align="center">
-
 # Django Job Portal
-
-</div>
 
 ## Project Overview
 
 The **Django Job Portal** is an open-source job portal application developed using Django. It enables users to search for job opportunities, apply for positions, and manage resumes. Employers can post job openings and view applications. The project aims to streamline the job application process and provide a user-friendly interface for both job seekers and employers.
 
+<div align="center">
 <img src="./screenshots/illustration.png" alt="Job Interview" width="300" height="356.5">
+</div>
 
 ## Technologies
 
