@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="./screenshots/illustration.png" alt="Job Interview" width="300" height="356.5">
-
 # Django Job Portal
 
 </div>
@@ -10,33 +8,12 @@
 
 The **Django Job Portal** is an open-source job portal application developed using Django. It enables users to search for job opportunities, apply for positions, and manage resumes. Employers can post job openings and view applications. The project aims to streamline the job application process and provide a user-friendly interface for both job seekers and employers.
 
-**Live Demo:** [View Live Demo](https://django-job.herokuapp.com/) | [Second Demo](http://jobs.manjurulhoque.com/)
+<img src="./screenshots/illustration.png" alt="Job Interview" width="300" height="356.5">
 
 ## Technologies
 
 - **Django:** Web framework for building the application.
 - **SQLite:** Lightweight database for storing data.
-
-## Screenshots
-
-**Home Page**
-![Home Page](screenshots/one.png)
-
-**Resume Template Page**
-![Resume Template Page](screenshots/six.png)
-![Resume Template Page](screenshots/seven.png)
-
-**Login Page**
-![Login Page](screenshots/five.png)
-
-**Add New Position as Employer**
-![Add New Position](screenshots/two.png)
-
-**Job Details**
-![Job Details](screenshots/three.png)
-
-**Swagger API**
-![Swagger API](screenshots/four.png)
 
 ## Local Environment Setup
 
@@ -106,6 +83,26 @@ The **Django Job Portal** is an open-source job portal application developed usi
 ```bash
 python manage.py test
 ```
+## Screenshots
+
+**Home Page**
+![Home Page](screenshots/one.png)
+
+**Resume Template Page**
+![Resume Template Page](screenshots/six.png)
+![Resume Template Page](screenshots/seven.png)
+
+**Login Page**
+![Login Page](screenshots/five.png)
+
+**Add New Position as Employer**
+![Add New Position](screenshots/two.png)
+
+**Job Details**
+![Job Details](screenshots/three.png)
+
+**Swagger API**
+![Swagger API](screenshots/four.png)
 ### License
 This project is licensed under the MIT License.
 
